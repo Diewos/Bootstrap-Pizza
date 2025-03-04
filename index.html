@@ -44,6 +44,30 @@
             box-sizing: border-box;
         }
 
+
+        .image-mask .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        .image-mask .text-overlay h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .image-mask .text-overlay h2 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .image-mask .text-overlay .btn {
+            margin-top: 1rem;
+        }
+
         .image-mask img {
             display: block;
             width: 100%;
@@ -165,6 +189,11 @@
   <section>
     <div class="image-mask">
       <img src="img/cover.jpg" alt="cover" class="img-fluid">
+      <div class="text-overlay">
+        <h1 class="lead display-1">Pizzaria Dolce Gusto</h1>
+        <h2 class="lead display-5">O prazer vem redondo</h2>
+        <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#Modal_ub">A Nossa Localizacao</a>
+    </div>
     </div>
   </section>
 
