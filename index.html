@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <title>Pizza</title>
 </head>
@@ -50,7 +51,7 @@
                             <td><p class="Lead fs-4 fw-light text-justify">Sueave, cremosa, saborosa, intensa</p>
                         </tr>
                         <tr>
-                            <td><a href="#" class="btn btn-outline-light btn-lg">Encomende Agora</a></td>
+                            <td><a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#Modal_ub">Encomende Agora</a></td>
                         </tr>
                     </table>
                 </div>
@@ -64,7 +65,7 @@
 
       <div class="row align-items-center justify-content-center" style="width: 100%;">
           <div class="col-md-10 col-lg-2 my-3">
-            <div class="card text-center border border-0">
+            <div class="card text-center border border-0 shadow">
               <div class="card-body">
                 <h4 class="card-title">Napolitana</h4>
                 <h5 class="lead">Para os mais vegetarianos</h5>
@@ -76,7 +77,7 @@
           </div>
 
           <div class="col-md-10 col-lg-2 my-4">
-            <div class="card text-center border border-0">
+            <div class="card text-center border border-0 shadow">
               <div class="card-body">
                 <h4 class="card-title">Margherita</h4>
                 <h5 class="lead">Para os mais vegetarianos</h5>
@@ -88,7 +89,7 @@
           </div>
 
           <div class="col-md-10 col-lg-2 my-4 ">
-            <div class="card text-center border border-primary">
+            <div class="card text-center border border-primary shadow">
               <div class="card-header">
                 <h5 class="card-title text-primary">Promoção</h5>
               </div>
@@ -103,7 +104,7 @@
           </div>
 
           <div class="col-md-10 col-lg-2 my-4">
-            <div class="card text-center border border-0">
+            <div class="card text-center border border-0 shadow">
               <div class="card-body">
                 <h4 class="card-title">4 Estações</h4>
                 <h5 class="lead">Para os mais vegetarianos</h5>
@@ -118,14 +119,118 @@
 
     <!--Mask-->
   <section>
-
+    <div style="background-image: url(img/cover.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 30%;" class="align-items-center justify-content-center">
+        <div class="text-center " style="background-color: rgb(0, 0, 0, 0.5);">
+          <h1 class="text-white lead display-1">Dolce Gusto</h1>
+          <h4 class="text-white lead display-4">Pizzaria</h4>
+          <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#Modal_ub">A nossa Localizacao</button>
+        </div>
+    </div>
   </section>
 
 <!--opiniones-->
-  <section>
-      <h1 class="text-center my-3">Opiniões</h1>
+<section>
+  <div class="my-5">
+    <h1 class = "display-4 text-center">Opiniones</h1>
+    <p class = "lead text-center">O que dizem os nossos clientes</p>
+  </div>
+    <div class = "container" style="width: 50%;">
+      <div class = "card border border-0 px-5">
+        <div class = "card-body">  
+          <div class="col">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </div>
+            <h5 class = "card-title">Opinioes sobre as nossas Pizzas</h5>
+            <p class = "card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem fuga laudantium deleniti nam minus excepturi incidunt. Est delectus laborum voluptatum debitis, nobis, reiciendis ab unde laudantium consequuntur sequi repudiandae.</p>
+            <p class="card-text">e.g. Mario Andretti</p>
+         </div>
+      </div>
+
+         
+         <div class = "card border border-0 px-5">
+          <div class = "card-body">  
+            <div class="col">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <i class="bi bi-star"></i>
+            </div>
+              <h5 class = "card-title">Opinioes sobre as nossas Pizzas</h5>
+              <p class = "card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem fuga laudantium deleniti nam minus excepturi incidunt. Est delectus laborum voluptatum debitis, nobis, reiciendis ab unde laudantium consequuntur sequi repudiandae.</p>
+              <p class="card-text">e.g. Celina Riviera</p>
+           </div>
+        </div>
+
+           <div class = "card border border-0 px-5">
+            <div class = "card-body">  
+              <div class="col">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div>
+                <h5 class = "card-title">Opinioes sobre as nossas Pizzas</h5>
+                <p class = "card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem fuga laudantium deleniti nam minus excepturi incidunt. Est delectus laborum voluptatum debitis, nobis, reiciendis ab unde laudantium consequuntur sequi repudiandae.</p>
+                <p class="card-text">e.g. Celina Riviera</p>
+             </div>
+          </div>
+      </div>
   </section>
+
+
+  <footer class="py-3 mt-5" style="background-color: #be9e8b;">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+      <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+  </footer>
+
+
+  <!--Modals-->
+
+  <!--Modal Ubicacion-->
+  <div class="modal fade" id="Modal_ub" tabindex="-1" aria-labelledby="Modal_ubication" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-info" id="exampleModalLabel">Conheca as nossas</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="googleMap" style="width:100%;height:400px;"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   
+  <!--Modal Contacto-->
+  
+
+  <!--Scripts-->
+  <script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(40.835671757262524, -8.482192125869211),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTDYqzMqvw_zr3exTovnMhLAfcNU1woeg&callback=myMap"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
