@@ -39,6 +39,10 @@
             left: 0.5%;
             width: 99%;
             height: 99%;
+            top: 1%;
+            left: 1%;
+            width: 98%;
+            height: 98%;
             background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
             border: 10px solid transparent; /* Margin around the mask */
             box-sizing: border-box;
@@ -79,13 +83,17 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #be9e8b;">
         <div class="container-fluid ms-5">
           <img src="img/logo.png" alt="Pizza" width="50" class="d-inline-block align-text-top me-3"> 
+        <div class="container-lg">
+          <img src="img/logo.png" alt="Pizza" class="img-fluid" style="width: 50px;"> 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link text-white active" aria-current="page" href="#inicio">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Precos</a>
+                <a class="nav-link text-white" href="#Cards">Precos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Menu</a>
@@ -98,6 +106,8 @@
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-light" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Procurar</button>
           </form>
         </div>
       </nav>
@@ -120,15 +130,42 @@
                         <tr>
                             <td><a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#Modal_ub">Encomende Agora</a></td>
                         </tr>
+    <section id="inicio" style="background-color: #be9e8b; padding-top: 10%; padding-bottom: 20%;">
+        <div class="container">
+            <div class="row column-gap-3 align-items-center justify-content-center ">
+                <div class="col-md-12 col-lg-5 text-justify">                    
+                    <table class="align-top">
+                    <tr style="margin-bottom: 0px;">
+                        <td><h1 class="display-1">Pizzaria</h1></td>
+                    </tr>
+                    <tr style="margin-top: 0px;">
+                        <td><h1 class="display-1">Dolce Gusto</h1></td>
+                    </tr>
+                    <tr style="margin-top: 0px;">
+                      <td><h2 class="display-6  text-muted">O prazer vem redondo</h2></td>
+                    </tr>
+                    <tr>
+                        <td><p class="fs-5 fw-light text-muted">Sueave, cremosa, saborosa, intensa</p>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#Modal_ub">Encomende Agora</a></td>
+                    </tr>
                     </table>
                 </div>
             <div class="col-md-12 col-lg-5 m-auto"><img src="img/cover.jpg" alt="cover" width="500px" class="rounded-5"></div>
+                <div class="col-md-12 col-lg-5 text-center"><img src="img/cover.jpg" alt="cover" width="525px" class="rounded-5"></div>
             </div>
       </div>
+        </div>
     </section>
 
     <!--Cards-->
     <section class="mt-5 bg-light" style="padding-top: 15%; padding-bottom: 15%;">
+    <section id = "Cards" class="mt-5 bg-light" style="padding-top: 10%; padding-bottom: 15%;">
+    <div class="text-center mb-5">
+        <h1 class="lead display-2">Precos e Custos</h1>
+        <h5 class="lead fw-1 text-muted">Escolha a pizza mais adecuada para si</h5>
+    </div>
 
       <div class="row align-items-center justify-content-center" style="width: 100%;">
 
@@ -138,8 +175,11 @@
                 <h4 class="card-title">Napolitana</h4>
                 <h5 class="lead">Para os mais vegetarianos</h5>
                 <h1 class="my-4 text-primary">12.99€</h1>
+                <h1 class="my-4 text-primary display-5 fw-bold">12.99€</h1>
                 <p class="card-text">Calabresa, cebola, azeitona, mussarela e molho de tomate.</p>
                 <a href="#" class="btn btn-outline-primary my-3">Encomendar</a>
+                <a href="#" class="btn btn-outline-primary mt-3">Encomendar</a>
+                <a href="#" class="btn btn-outline-primary my-3">Ver Mais</a>
               </div>
             </div>
           </div>
@@ -150,6 +190,7 @@
                 <h4 class="card-title">Margherita</h4>
                 <h5 class="lead">Para os mais vegetarianos</h5>
                 <h1 class="my-4 text-primary">8.99€</h1>
+                <h1 class="my-4 text-primary display-5 fw-bold">8.99€</h1>
                 <p class="card-text">Calabresa, cebola, azeitona, mussarela e molho de tomate.</p>
                 <a href="#" class="btn btn-outline-primary my-3">Encomendar</a>
               </div>
@@ -165,6 +206,7 @@
                 <h4 class="card-title">Carbonara</h4>
                 <h5 class="lead">Para os mais vegetarianos</h5>
                 <h1 class="my-4 text-primary">11.95€</h1>
+                <h1 class="my-4 text-primary display-5 fw-bold">11.95€</h1>
                 <p class="card-text">Calabresa, cebola, azeitona, mussarela e molho de tomate.</p>
                 <a href="#" class="btn btn-outline-primary my-3">Encomendar</a>
               </div>
@@ -177,6 +219,7 @@
                 <h4 class="card-title">4 Estações</h4>
                 <h5 class="lead">Para os mais vegetarianos</h5>
                 <h1 class="my-4 text-primary">14.29€</h1>
+                <h1 class="my-4 text-primary display-5 fw-bold">14.29€</h1>
                 <p class="card-text">Calabresa, cebola, azeitona, mussarela e molho de tomate.</p>
                 <a href="#" class="btn btn-outline-primary my-3">Encomendar</a>
               </div>
@@ -187,11 +230,14 @@
 
     <!--Mask-->
   <section>
+  <section id = "maks">
     <div class="image-mask">
       <img src="img/cover.jpg" alt="cover" class="img-fluid">
       <div class="text-overlay">
         <h1 class="lead display-1">Pizzaria Dolce Gusto</h1>
         <h2 class="lead display-5">O prazer vem redondo</h2>
+        <h1 class="display-1" style="font-size: 6em;">Dolce Gusto</h1>
+        <h2 class="display-5">Pizzaria</h2>
         <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#Modal_ub">A Nossa Localizacao</a>
     </div>
     </div>
@@ -199,14 +245,19 @@
 
 <!--opiniones-->
 <section>
+<section id="Opiniones">
   <div class="my-5">
     <h1 class = "display-4 text-center">Opiniones</h1>
     <p class = "lead text-center">O que dizem os nossos clientes</p>
+    <h1 class = "display-2 text-center">Opiniões</h1>
+    <p class = "lead text-center">Quais as opiniões dos nossos clientes...</p>
   </div>
       <div class = "container  col-md-12 col-lg-6">
+      <div class = "container col-md-12 col-lg-8">
         <div class = "card border border-0 px-5">
           <div class = "card-body">  
             <div class="col">
+            <div class="col my-2">
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
@@ -223,6 +274,7 @@
          <div class = "card border border-0 px-5">
           <div class = "card-body">  
             <div class="col">
+            <div class="col my-2">
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
@@ -238,6 +290,7 @@
            <div class = "card border border-0 px-5">
             <div class = "card-body">  
               <div class="col">
+              <div class="col my-2">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-half"></i>
@@ -258,6 +311,8 @@
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">inicio</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Precos</a></li>
+      <li class="nav-item"><a href="#inicio" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+      <li class="nav-item"><a href="#Cards" class="nav-link px-2 text-body-secondary">Precos</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Menu</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Quem Somos</a></li>
     </ul>
@@ -280,6 +335,7 @@
         </div>
         <div class="modal-body">
           <div id="googleMap" style="width:100%;height:400px;"></div>
+            <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Centro%20Sul,%20R.%20Gen.%20Humberto%20Delgado%20187,%203720-254%20Oliveira%20de%20Azem%C3%A9is+(Dolce%20Gusto)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
