@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Pizza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+
+    <!-- Botón para abrir el modal -->
+    <div class="text-center mt-5">
+        <button type="button" class="btn btn-lg btn-danger fw-bold shadow" data-bs-toggle="modal" data-bs-target="#pedidoModal">
+            <i class="bi bi-cart-plus-fill"></i> Fazer Pedido
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="pedidoModal" tabindex="-1" aria-labelledby="pedidoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content rounded-4">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title fw-bold" id="pedidoModalLabel">
+                        <i class="bi bi-bag-fill"></i> Pedido de Pizza
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-9">
+                                <label class="form-label fw-bold" for="pizza">Escolha sua Pizza:</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-danger text-white">
+                                        <i class="bi bi-pizza"></i>
+                                    </span>
+                                    <select class="form-select border-danger" id="pizza">
+                                        <option selected>Selecione...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold" for="quantidadePizza">Quantidade</label>
+                                <div class="input-group border-danger ">
+                                    <span class="input-group-text bg-danger border-danger text-white">
+                                        <i class="bi bi-basket"></i>
+                                    </span>
+                                <input type="number" class="form-control border-danger text-center" id="quantidadePizza" min="1" value="1" max="5" >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-9">
+                                <label class="form-label fw-bold" for="bebida">Escolha sua Bebida:</label>
+                                <div class="input-group border-danger">
+                                    <span class="input-group-text bg-danger border-danger text-white">
+                                        <i class="bi bi-cup-straw"></i>
+                                    </span>
+                                    <select class="form-select border-danger" id="bebida">
+                                        <option selected>Selecione...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold" for="quantidadeBebida">Quantidade</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-danger border-danger text-white">
+                                        <i class="bi bi-basket"></i>
+                                    </span>
+
+                                <input type="number" class="form-control border-danger text-center" id="quantidadeBebida" min="1" value="1" max="5">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <label class="fw-bold">Extras:</label>
+                            <div class="d-flex flex-wrap gap-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="extraQueijo">
+                                    <label class="form-check-label" for="extraQueijo">
+                                         <p><i class="bi bi-droplet"></i>Extra Queijo</p>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="massaGrossa">
+                                    <label class="form-check-label" for="massaGrossa">
+                                        <p><i class="bi bi-bread-slice"></i> Massa Grossa</p>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="pimentos">
+                                    <label class="form-check-label" for="pimentos">
+                                         <p><i class="bi bi-droplet"></i>Pimentos</p>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="alcachofas">
+                                    <label class="form-check-label" for="alcachofas">
+                                         <p><i class="bi bi-droplet"></i>Alcachofas</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <label class="fw-bold" for="nome">Nome:</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-danger border-danger text-white">
+                                    <i class="bi bi-person"></i>
+                                </span>
+                                <input type="text" class="form-control border-danger" id="nome" placeholder="Seu nome">
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <label class="fw-bold" for="morada">Morada:</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-danger border-danger text-white">
+                                    <i class="bi bi-house-door"></i>
+                                </span>
+                                <textarea class="form-control border-danger" id="morada" rows="2" placeholder="Endereço completo"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-6">
+                                <label class="fw-bold" for="contacto">Contacto:</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-danger border-danger text-white">
+                                        <i class="bi bi-telephone"></i>
+                                    </span>
+                                    <input type="text" class="form-control border-danger" id="contacto" placeholder="999 999 999">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="fw-bold" for="email">E-Mail:</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-danger border-danger text-white">
+                                        <i class="bi bi-envelope"></i>
+                                    </span>
+                                    <input type="email" class="form-control border-danger" id="email" placeholder="exemplo@email.com">
+                                </div>
+                            </div>
+
+
+
+                        <div class="mt-4">
+                            <label class="fw-bold"><i class="bi bi-credit-card"></i> Forma de Pagamento:</label>
+                            <div class="d-flex flex-wrap gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pagamento" id="visa">
+                                    <label class="form-check-label" for="visa">
+                                        <i class="bi bi-credit-card-2-front"></i> Visa
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pagamento" id="contraEntrega">
+                                    <label class="form-check-label" for="contraEntrega">
+                                        <i class="bi bi-wallet"></i> Contra Entrega
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pagamento" id="faturar">
+                                    <label class="form-check-label" for="faturar">
+                                        <i class="bi bi-cash"></i> A faturar (30 Dias + 15%)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <label class="fw-bold" for="cartaoVisa"> Nº do cartão VISA:</label>
+                                <div class="input-group">
+                                 <span class="input-group-text bg-danger  border-danger text-white">
+                                    <i class="bi bi-credit-card"></i>
+                                 </span>
+                                 <input type="password" class="form-control border-danger" id="cartaoVisa">
+                                 </div>
+                            
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success btn-lg w-100 shadow">
+                        <i class="bi bi-check-lg"></i> Enviar Pedido
+                    </button>
+                    <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">
+                        <i class="bi bi-x-lg"></i> Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

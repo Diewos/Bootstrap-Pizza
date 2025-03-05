@@ -39,8 +39,8 @@
             left: 1%;
             width: 98%;
             height: 98%;
-            background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
-            border: 10px solid transparent; /* Margin around the mask */
+            background-color: rgba(0, 0, 0, 0.5); 
+            border: 10px solid transparent; 
             box-sizing: border-box;
         }
 
@@ -76,27 +76,27 @@
         
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #be9e8b;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #be9e8b;" data-bs-theme="dark">
         <div class="container-lg">
           <img src="img/logo.png" alt="Pizza" class="img-fluid" style="width: 50px;"> 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link text-white active" aria-current="page" href="#inicio">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#Cards">Precos</a>
+                <a class="nav-link" href="#Cards">Precos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Menu</a>
+                <a class="nav-link" href="menu.html">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Quem Somos</a>
+                <a class="nav-link" href="#">Quem Somos</a>
               </li>
             </ul>
           </div>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search" data-bs-theme="light">
             <button class="btn btn-outline-light" type="submit">Procurar</button>
           </form>
         </div>
@@ -121,7 +121,7 @@
                         <td><p class="fs-5 fw-light text-muted">Sueave, cremosa, saborosa, intensa</p>
                     </tr>
                     <tr>
-                        <td><a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#Modal_ub">Encomende Agora</a></td>
+                        <td><a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#pedidoModal">Encomende Agora</a></td>
                     </tr>
                     </table>
                 </div>
@@ -137,7 +137,8 @@
         <h5 class="lead fw-1 text-muted">Escolha a pizza mais adecuada para si</h5>
     </div>
 
-      <div class="row align-items-center justify-content-center" style="width: 100%;">
+    <div class="row align-items-center justify-content-center" style="width: 100%;">
+
           <div class="col-md-10 col-lg-2 my-3 animation">
             <div class="card text-center border border-0 shadow">
               <div class="card-body">
@@ -145,8 +146,10 @@
                 <h5 class="lead">Para os mais vegetarianos</h5>
                 <h1 class="my-4 text-primary display-5 fw-bold">12.99€</h1>
                 <p class="card-text">Calabresa, cebola, azeitona, mussarela e molho de tomate.</p>
-                <a href="#" class="btn btn-outline-primary mt-3">Encomendar</a>
-                <a href="#" class="btn btn-outline-primary my-3">Ver Mais</a>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#pedidoModal">Encomendar</a>
+                  <a class="btn btn-outline-primary" type="button" href="menu.html#napolitana">Ver Mais</a>
+                </div>
               </div>
             </div>
           </div>
@@ -158,7 +161,10 @@
                 <h5 class="lead">Para os mais vegetarianos</h5>
                 <h1 class="my-4 text-primary display-5 fw-bold">8.99€</h1>
                 <p class="card-text">Calabresa, cebola, azeitona, mussarela e molho de tomate.</p>
-                <a href="#" class="btn btn-outline-primary my-3">Encomendar</a>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#pedidoModal">Encomendar</a>
+                  <a class="btn btn-outline-primary" type="button" href="menu.html#margherita">Ver Mais</a>
+                </div>
               </div>
             </div>
           </div>
@@ -173,7 +179,10 @@
                 <h5 class="lead">Para os mais vegetarianos</h5>
                 <h1 class="my-4 text-primary display-5 fw-bold">11.95€</h1>
                 <p class="card-text">Calabresa, cebola, azeitona, mussarela e molho de tomate.</p>
-                <a href="#" class="btn btn-outline-primary my-3">Encomendar</a>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#pedidoModal">Encomendar</a>
+                  <a class="btn btn-outline-primary" type="button" href="menu.html#carbonara">Ver Mais</a>
+                </div>
               </div>
             </div>
           </div>
@@ -185,7 +194,10 @@
                 <h5 class="lead">Para os mais vegetarianos</h5>
                 <h1 class="my-4 text-primary display-5 fw-bold">14.29€</h1>
                 <p class="card-text">Calabresa, cebola, azeitona, mussarela e molho de tomate.</p>
-                <a href="#" class="btn btn-outline-primary my-3">Encomendar</a>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#pedidoModal">Encomendar</a>
+                  <a class="btn btn-outline-primary" type="button" href="menu.html#estacoes">Ver Mais</a>
+                </div>
               </div>
             </div>
           </div>
@@ -199,7 +211,7 @@
       <div class="text-overlay">
         <h1 class="display-1" style="font-size: 6em;">Dolce Gusto</h1>
         <h2 class="display-5">Pizzaria</h2>
-        <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#Modal_ub">A Nossa Localizacao</a>
+        <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#Modal_ub">A Nossa Localização</a>
     </div>
     </div>
   </section>
@@ -263,15 +275,15 @@
 
   <footer class="py-3 mt-5" style="background-color: #be9e8b;">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#inicio" class="nav-link px-2 text-body-secondary">Inicio</a></li>
-      <li class="nav-item"><a href="#Cards" class="nav-link px-2 text-body-secondary">Precos</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Menu</a></li>
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+      <li class="nav-item"><a href="index.html#Cards" class="nav-link px-2 text-body-secondary">Precos</a></li>
+      <li class="nav-item"><a href="menu.html" class="nav-link px-2 text-body-secondary">Menu</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Quem Somos</a></li>
     </ul>
-    <div class="container">
-        <p class="text-center text-body-secondary">Pizzaria Dolce Gusto</p>
-        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
-    </div>
+        <div class="row align-items-center justify-content-center">
+          <p class="col-3 text-center text-body-secondary">Pizzaria Dolce Gusto © 2024 Company, Inc</p>
+          <img src="img/paypal.png" alt="paypal" class="img-fluid col-3" style="width: 250px;">
+        </div>
   </footer>
 
 
@@ -282,7 +294,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5 text-info" id="exampleModalLabel">Conheca as nossas</h1>
+          <h1 class="modal-title fs-5 text-info" id="exampleModalLabel">Conheça as nossas instalações</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -295,9 +307,187 @@
     </div>
   </div>
   
-  <!--Modal Contacto-->
+  <!--Modal pedido-->
   
+  <div class="modal fade" id="pedidoModal" tabindex="-1" aria-labelledby="pedidoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content rounded-4">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title fw-bold" id="pedidoModalLabel">
+                    <i class="bi bi-bag-fill"></i> Pedido de Pizza
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-9">
+                            <label class="form-label fw-bold" for="pizza">Escolha sua Pizza:</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-danger text-white">
+                                    <i class="bi bi-pizza"></i>
+                                </span>
+                                <select class="form-select border-danger" id="pizza">
+                                    <option selected>Selecione...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold" for="quantidadePizza">Quantidade</label>
+                            <div class="input-group border-danger ">
+                                <span class="input-group-text bg-danger border-danger text-white">
+                                    <i class="bi bi-basket"></i>
+                                </span>
+                            <input type="number" class="form-control border-danger text-center" id="quantidadePizza" min="1" value="1" max="5" >
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="row g-3 mt-3">
+                        <div class="col-md-9">
+                            <label class="form-label fw-bold" for="bebida">Escolha sua Bebida:</label>
+                            <div class="input-group border-danger">
+                                <span class="input-group-text bg-danger border-danger text-white">
+                                    <i class="bi bi-cup-straw"></i>
+                                </span>
+                                <select class="form-select border-danger" id="bebida">
+                                    <option selected>Selecione...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold" for="quantidadeBebida">Quantidade</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-danger border-danger text-white">
+                                    <i class="bi bi-basket"></i>
+                                </span>
+
+                            <input type="number" class="form-control border-danger text-center" id="quantidadeBebida" min="1" value="1" max="5">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <label class="fw-bold">Extras:</label>
+                        <div class="d-flex flex-wrap gap-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="extraQueijo">
+                                <label class="form-check-label" for="extraQueijo">
+                                     <p><i class="bi bi-droplet"></i>Extra Queijo</p>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="massaGrossa">
+                                <label class="form-check-label" for="massaGrossa">
+                                    <p><i class="bi bi-bread-slice"></i> Massa Grossa</p>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="pimentos">
+                                <label class="form-check-label" for="pimentos">
+                                     <p><i class="bi bi-droplet"></i>Pimentos</p>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="alcachofas">
+                                <label class="form-check-label" for="alcachofas">
+                                     <p><i class="bi bi-droplet"></i>Alcachofas</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <label class="fw-bold" for="nome">Nome:</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-danger border-danger text-white">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" class="form-control border-danger" id="nome" placeholder="Seu nome">
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <label class="fw-bold" for="morada">Morada:</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-danger border-danger text-white">
+                                <i class="bi bi-house-door"></i>
+                            </span>
+                            <textarea class="form-control border-danger" id="morada" rows="2" placeholder="Endereço completo"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mt-3">
+                        <div class="col-md-6">
+                            <label class="fw-bold" for="contacto">Contacto:</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-danger border-danger text-white">
+                                    <i class="bi bi-telephone"></i>
+                                </span>
+                                <input type="text" class="form-control border-danger" id="contacto" placeholder="999 999 999">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="fw-bold" for="email">E-Mail:</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-danger border-danger text-white">
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+                                <input type="email" class="form-control border-danger" id="email" placeholder="exemplo@email.com">
+                            </div>
+                        </div>
+
+
+
+                    <div class="mt-4">
+                        <label class="fw-bold"><i class="bi bi-credit-card"></i> Forma de Pagamento:</label>
+                        <div class="d-flex flex-wrap gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pagamento" id="visa">
+                                <label class="form-check-label" for="visa">
+                                    <i class="bi bi-credit-card-2-front"></i> Visa
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pagamento" id="contraEntrega">
+                                <label class="form-check-label" for="contraEntrega">
+                                    <i class="bi bi-wallet"></i> Contra Entrega
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pagamento" id="faturar">
+                                <label class="form-check-label" for="faturar">
+                                    <i class="bi bi-cash"></i> A faturar (30 Dias + 15%)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <label class="fw-bold" for="cartaoVisa"> Nº do cartão VISA:</label>
+                            <div class="input-group">
+                             <span class="input-group-text bg-danger  border-danger text-white">
+                                <i class="bi bi-credit-card"></i>
+                             </span>
+                             <input type="password" class="form-control border-danger" id="cartaoVisa">
+                             </div>
+                        
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success btn-lg w-100 shadow">
+                    <i class="bi bi-check-lg"></i> Enviar Pedido
+                </button>
+                <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">
+                    <i class="bi bi-x-lg"></i> Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+  
   <!--Scripts-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTDYqzMqvw_zr3exTovnMhLAfcNU1woeg&callback=myMap"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
